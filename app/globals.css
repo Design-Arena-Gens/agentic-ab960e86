@@ -1,0 +1,33 @@
+:root{ --bg:#0b1020; --card:#121933; --muted:#9fb0ff; --text:#f3f5ff; --accent:#7c9cff; --accent-2:#64d1b8; }
+*{box-sizing:border-box}
+html,body{padding:0;margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:800;color:var(--text);text-decoration:none;font-size:18px}
+.nav-links a{color:var(--muted);text-decoration:none;margin-inline-start:14px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px}
+.h1{font-size:40px;line-height:1.15;margin:0 0 10px}
+.h2{font-size:26px;margin:12px 0}
+.p{color:var(--muted);line-height:1.8}
+.cta{display:inline-block;background:var(--accent);color:#0a1020;border:none;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+.grid{display:grid;gap:16px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:920px){.hero{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
+.section-title{margin:24px 0 10px}
+.footer{opacity:.7}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#0d1536;border:1px solid rgba(255,255,255,.08);padding:6px 10px;border-radius:999px;color:var(--muted)}
+.input, .select, .textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);color:var(--text)}
+.label{display:block;margin:10px 0 6px;color:var(--muted)}
+.button{background:var(--accent-2);color:#002b24;border:none;padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer}
+.kpi{display:flex;gap:12px;align-items:center}
+.kpi .num{font-size:28px;font-weight:800}
+.small{font-size:12px;color:var(--muted)}
+.list{margin:0;padding-inline-start:18px}
+.tag{display:inline-block;margin:2px 6px 2px 0;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);}
+
+/* components */
+.checklist{display:flex;flex-direction:column;gap:10px}
+.checklist-item{display:flex;gap:10px;align-items:flex-start}
+.checklist-item input{margin-top:4px}
